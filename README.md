@@ -32,6 +32,8 @@ Add `:exvcr` to `deps` section of `mix.exs`.
   end
 ```
 
+Note: mix tasks will only be available in the test environment, so prepend mix with `MIX_ENV=test`.
+
 Optionally, `preferred_cli_env: [vcr: :test]` can be specified for running `mix vcr` in `:test` env by default
 
 ```elixir
